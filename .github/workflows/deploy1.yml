@@ -1,4 +1,4 @@
-name: Deploy to Production in AWS Aula DevSecOps
+name: Deploy to Production in AWS DevSecOps
 
 # Definir os gatilhos para o workflow
 on:
@@ -45,7 +45,7 @@ jobs:
         port: 22
         script: |
           sudo set enforce 0
-          cd ./aula || git clone https://github.com/cassiowt/nodepipeline-devops.git
+          cd ./aula || git clone https://github.com/pedroivoadv/nodepipeline-devops.git
           cd nodepipeline-devops
           git pull origin main  # Ou outro comando para atualizar o código
           sudo npm install
